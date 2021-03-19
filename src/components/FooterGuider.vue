@@ -26,7 +26,11 @@ export default {
   name: "FooterGuider",
   methods:{
     goto(path){
-      this.$router.replace(path);
+      if (this.$route.path === path) {
+        location.reload();
+      }else {
+        this.$router.replace(path);
+      }
     }
   }
 }
@@ -39,6 +43,7 @@ export default {
   color $green
 
 .footer-guider
+  background-color: #fff;
   top-border-1px(#cccccc)
   position fixed
   left 0

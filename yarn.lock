@@ -1305,6 +1305,13 @@
   "resolved" "https://registry.npm.taobao.org/aws4/download/aws4-1.8.0.tgz"
   "version" "1.8.0"
 
+"axios@^0.19.0":
+  "integrity" "sha1-PqNsXYgY0NX4qKl6bTa4bNwAyyc="
+  "resolved" "https://registry.npm.taobao.org/axios/download/axios-0.19.2.tgz?cache=0&sync_timestamp=1608609188013&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faxios%2Fdownload%2Faxios-0.19.2.tgz"
+  "version" "0.19.2"
+  dependencies:
+    "follow-redirects" "1.5.10"
+
 "babel-code-frame@^6.22.0", "babel-code-frame@^6.26.0":
   "resolved" "https://registry.npm.taobao.org/babel-code-frame/download/babel-code-frame-6.26.0.tgz"
   "version" "6.26.0"
@@ -2346,6 +2353,13 @@
   dependencies:
     "ms" "^2.1.1"
 
+"debug@=3.1.0":
+  "integrity" "sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE="
+  "resolved" "https://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz?cache=0&sync_timestamp=1607566571506&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-3.1.0.tgz"
+  "version" "3.1.0"
+  dependencies:
+    "ms" "2.0.0"
+
 "debug@~3.1.0":
   "integrity" "sha1-W7WgZyYotkFJVmuhaBnmFRjGcmE="
   "resolved" "https://registry.npm.taobao.org/debug/download/debug-3.1.0.tgz?cache=0&sync_timestamp=1607566571506&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-3.1.0.tgz"
@@ -2508,6 +2522,13 @@
   dependencies:
     "domelementtype" "^2.0.1"
     "entities" "^2.0.0"
+
+"dom7@^2.1.5":
+  "integrity" "sha1-p5QRAXgAsx2EAAcM2uu/ySwfY3c="
+  "resolved" "https://registry.npm.taobao.org/dom7/download/dom7-2.1.5.tgz"
+  "version" "2.1.5"
+  dependencies:
+    "ssr-window" "^2.0.0"
 
 "domain-browser@^1.1.1":
   "resolved" "https://registry.npm.taobao.org/domain-browser/download/domain-browser-1.2.0.tgz"
@@ -3250,6 +3271,13 @@
   "version" "1.7.0"
   dependencies:
     "debug" "^3.2.6"
+
+"follow-redirects@1.5.10":
+  "integrity" "sha1-e3qfmuov3/NnhqlP9kPtB/T/Xio="
+  "resolved" "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.5.10.tgz?cache=0&sync_timestamp=1614436920073&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.5.10.tgz"
+  "version" "1.5.10"
+  dependencies:
+    "debug" "=3.1.0"
 
 "for-in@^1.0.2":
   "resolved" "https://registry.npm.taobao.org/for-in/download/for-in-1.0.2.tgz"
@@ -4601,7 +4629,8 @@
   "version" "2.1.2"
 
 "ms@2.0.0":
-  "resolved" "https://registry.npm.taobao.org/ms/download/ms-2.0.0.tgz"
+  "integrity" "sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g="
+  "resolved" "https://registry.npm.taobao.org/ms/download/ms-2.0.0.tgz?cache=0&sync_timestamp=1607433872491&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fms%2Fdownload%2Fms-2.0.0.tgz"
   "version" "2.0.0"
 
 "ms@2.1.1":
@@ -6343,6 +6372,11 @@
     "safer-buffer" "^2.0.2"
     "tweetnacl" "~0.14.0"
 
+"ssr-window@^2.0.0":
+  "integrity" "sha1-mMMBrvmVIzF/jWlhjwAQeRCW78Q="
+  "resolved" "https://registry.npm.taobao.org/ssr-window/download/ssr-window-2.0.0.tgz"
+  "version" "2.0.0"
+
 "ssri@^5.2.4":
   "resolved" "https://registry.npm.taobao.org/ssri/download/ssri-5.3.0.tgz"
   "version" "5.3.0"
@@ -6593,6 +6627,14 @@
     "stable" "^0.1.8"
     "unquote" "~1.1.1"
     "util.promisify" "~1.0.0"
+
+"swiper@^5.2.1":
+  "integrity" "sha1-o1D2VL9oQm27ZReTgkklUS0iPA8="
+  "resolved" "https://registry.npm.taobao.org/swiper/download/swiper-5.4.5.tgz?cache=0&sync_timestamp=1614953284849&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fswiper%2Fdownload%2Fswiper-5.4.5.tgz"
+  "version" "5.4.5"
+  dependencies:
+    "dom7" "^2.1.5"
+    "ssr-window" "^2.0.0"
 
 "table@^5.2.3":
   "resolved" "https://registry.npm.taobao.org/table/download/table-5.4.5.tgz?cache=0&sync_timestamp=1564593837345&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftable%2Fdownload%2Ftable-5.4.5.tgz"
@@ -7033,9 +7075,14 @@
   "resolved" "https://registry.npm.taobao.org/vue-template-es2015-compiler/download/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@^2.6.10":
+"vue@^2.0.0", "vue@^2.6.10":
   "resolved" "https://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz"
   "version" "2.6.10"
+
+"vuex@^3.1.2":
+  "integrity" "sha1-I2vAhqhww655lG8QfxbeWdWJXnE="
+  "resolved" "https://registry.npm.taobao.org/vuex/download/vuex-3.6.2.tgz?cache=0&sync_timestamp=1612277384353&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvuex%2Fdownload%2Fvuex-3.6.2.tgz"
+  "version" "3.6.2"
 
 "watchpack@^1.5.0":
   "resolved" "https://registry.npm.taobao.org/watchpack/download/watchpack-1.6.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwatchpack%2Fdownload%2Fwatchpack-1.6.0.tgz"
