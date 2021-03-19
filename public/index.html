@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<!--    引入偏爱图标-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+<!--    清除默认样式-->
+    <link rel="stylesheet" href="reset.css">
+<!--    引入阿里图标库-->
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2431562_1o064nnpuxy.css">
+
+<!--    解决0.3s延迟问题 fastclick-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function () {
+                FastClick.attach(document.body);
+            }, false);
+        }
+    </script>
+    <title>外卖</title>
+
+</head>
+<body>
+<div id="app"></div>
+</body>
+
+
+</html>
