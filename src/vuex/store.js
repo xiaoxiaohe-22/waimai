@@ -8,11 +8,16 @@ import getters from "./getters";
 import actions from "./actions";
 import mutations from "./mutation"
 
+import shop from "@/vuex/modules/shop";
+
 
 export default  new Vuex.Store({
     state,
     getters,
     actions,
-    mutations
+    mutations,
+    modules:{
+        shop
+    }
 
 })

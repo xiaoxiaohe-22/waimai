@@ -5,6 +5,7 @@ const postcss = px2rem({
 })
 module.exports={
     devServer: {
+        open: true,
         proxy: {
             '/api': {
                 target: 'http://localhost:4000',
@@ -20,6 +21,7 @@ module.exports={
                     postcss
                 ]
             }
-        }
+        },
+        sourceMap:true,
     },
 }

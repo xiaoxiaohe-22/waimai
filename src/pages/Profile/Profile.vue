@@ -1,24 +1,25 @@
 <template>
   <section class="profile">
-    <Header title="个 人"/>
+    <Header title="个 人 中 心"/>
     <section class="profile-number">
-      <router-link to="/login" class="profile-link">
+      <div @click="toLogin" class="profile-link">
         <div class="profile_image">
-          <i class="iconfont icon-person"></i>
+          <i  class="iconfont icon-person iconwodedangxuan"></i>
         </div>
         <div class="user-info">
-          <p class="user-info-top">登录/注册</p>
-          <p>
+          <p v-if="!user.phone" class="user-info-top">{{user.name ||'登录/注册'}}</p>
+          <p v-if="!user.name">
             <span class="user-icon">
-              <i class="iconfont icon-shouji icon-mobile"></i>
+              <i class="iconfont iconPhoneAddNewApp"></i>
             </span>
-            <span class="icon-mobile-number">暂无绑定手机号</span>
+            <span class="icon-mobile-number">{{user.phone || '暂无绑定手机号'}}</span>
           </p>
+
         </div>
         <span class="arrow">
           <i class="iconfont icon-jiantou1"></i>
         </span>
-      </router-link>
+      </div>
     </section>
     <section class="profile_info_data border-1px">
       <ul class="info_data_list">
@@ -88,12 +89,40 @@
         </div>
       </a>
     </section>
+    <mt-button style="width: 100%"
+               type="danger"
+               @click.native="logOut"
+    >退出登录</mt-button>
   </section>
+
 </template>
 
 <script>
+import { MessageBox } from 'mint-ui';
+import {mapState} from "vuex"
+import {LOGOUT} from "../../vuex/mutation-types"
+
 export default {
-  name:"Profile"
+  name:"Profile",
+  computed:{
+    ...mapState(['user'])
+  },
+  methods:{
+    toLogin(){
+      !this.user._id && this.$router.push("/login")
+    },
+    async logOut(){
+     const result =  await MessageBox.confirm('确定执行此操作?')
+      if (result){
+        //退出的意思是 销毁localstorage里面保存的token以及置vuex中的token和user为初始数据
+        this.$store.commit(LOGOUT);
+        //然后页面跳转到登录页面
+        this.$router.replace("/login")
+      }
+
+
+    }
+  }
 }
 </script>
 
@@ -117,8 +146,8 @@ export default {
         overflow hidden
         vertical-align top
         .icon-person
-          background #e4e4e4
-          font-size 62px
+          font-size 42px
+          color black
       .user-info
         float left
         margin-top 8px

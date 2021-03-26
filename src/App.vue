@@ -9,8 +9,7 @@
 
 <script>
 import FooterGuider from "./components/FooterGuider";
-
-
+import {SAVE_USER} from "./vuex/mutation-types"
 export default {
   name: 'App',
   data(){
@@ -21,8 +20,12 @@ export default {
   components:{
     FooterGuider
   },
-   mounted() {
-      this.$store.dispatch("getAddress")
+   async mounted() {
+      //this.$store.dispatch("getAddress")
+
+    const result =  await this.$API.autoLogin()
+
+     this.$store.commit(SAVE_USER,result.data)
       //this.$store.dispatch("getCategorys")
       //this.$store.dispatch("getShops")
   }
